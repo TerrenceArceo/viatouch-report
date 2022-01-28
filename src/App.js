@@ -3,7 +3,6 @@ import Dashboard from './components/Dashboard'
 import MainContent from './components/MainContent'
 import './style.css'
 
-import {ReportContextProvider} from './context/reportContext'
 import { Routes, Route } from 'react-router-dom'
 import Machine from './dummyComponents/Machine'
 import Location from './dummyComponents/Location'
@@ -20,12 +19,10 @@ function App() {
       <Header />
 
       <main>
-        <ReportContextProvider>
           <Dashboard  />
-        </ReportContextProvider>
 
         <Routes>
-            <Route path="/reports" element={<ReportContextProvider><MainContent /></ReportContextProvider>} />
+            <Route path="/reports" element={<MainContent />} />
             <Route path="/machine" element={<Machine />} />
             <Route path="/location" element={<Location />} />
             <Route path="/management" element={<Management />} />
