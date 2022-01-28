@@ -18,7 +18,7 @@ export default function Dashboard() {
             <Link to="/machine">Machine</Link>
             <Link to="/location">Location</Link>
             <Link to="/products">Products</Link>
-            <Link to="/" onClick={reset}>Reports</Link>
+            <Link to="/reports" onClick={reset}>Reports</Link>
             <Link to="/media">Media</Link>
             <Link to="/usermanagement">User Management</Link>
             <Link to="/logout">Logout</Link>
